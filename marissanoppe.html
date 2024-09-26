@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+          <script>
+  // Initialize the agent on page load.
+  const fpPromise = import('https://fpjscdn.net/v3/ayF4rBJReDGzpx5ktqGP')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  // Get the visitorId when you need it.
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      const visitorId = result.visitorId
+      console.log(visitorId)
+    })
+</script>
+    </head>
+    <body>
+        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+        If you are not redirected automatically, follow this <a href='https://drive.google.com/file/d/1L7VuECLpEmTnTqj1k3kBKcPipshGx9lZ/view?usp=sharing'>link to your document</a>.
+    </body>
+</html>
