@@ -1,6 +1,4 @@
-layout: page
-title: "WHATCOM-CLEANER"
-permalink: /whatcomcleaner
+
 
 <script>
   // Initialize the agent on page load.
