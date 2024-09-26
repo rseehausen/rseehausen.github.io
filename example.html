@@ -1,14 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=http://example.com">
-        <script type="text/javascript">
-            window.location.href = "http://example.com"
-        </script>
-        <title>Page Redirection</title>
-
-        <script>
+          <script>
   // Initialize the agent on page load.
   const fpPromise = import('https://fpjscdn.net/v3/ayF4rBJReDGzpx5ktqGP')
     .then(FingerprintJS => FingerprintJS.load())
@@ -21,6 +14,12 @@
       console.log(visitorId)
     })
 </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url=http://example.com">
+        <script type="text/javascript">
+            window.location.href = "http://example.com"
+        </script>
+        <title>Page Redirection</title>
     </head>
     <body>
         <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
