@@ -1,6 +1,6 @@
 layout: page
-title: "WHATCOM-CLEANER"
-permalink: /whatcomcleaner
+title: "home"
+permalink: /home
 
 <script>
   // Initialize the agent on page load.
