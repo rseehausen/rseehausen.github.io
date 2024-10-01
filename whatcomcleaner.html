@@ -1,10 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-          <script>
+         <script>
   // Initialize the agent on page load.
-  const fpPromise = import('https://fpjscdn.net/v3/ayF4rBJReDGzpx5ktqGP')
-    .then(FingerprintJS => FingerprintJS.load())
+  const fpPromise = import('https://metrics.richardseehausen.com/web/v3/ayF4rBJReDGzpx5ktqGP')
+    .then(FingerprintJS => FingerprintJS.load({
+      endpoint: [
+        "https://metrics.richardseehausen.com",
+        FingerprintJS.defaultEndpoint
+      ]
+    }))
 
   // Get the visitorId when you need it.
   fpPromise
